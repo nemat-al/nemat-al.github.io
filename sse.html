@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nemat</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav id="navbar">
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                       <!-- <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">15</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>-->
+                        <h3 class="display-1 lh-base mb-0">Semantic Search Engine</h3>
+                        
+                    </div>
+                    <p> 
+                        The purpose of the project is to develop a semantic search engine in English language to search among news imported from BBC. 
+                        <br/><br/>
+                        To read a small introduction about serach engines, semantic search engines, and the structure of this project, please read an introducary report, <a href="../documents/SSE Introductory Report.pdf" target="_blank">here.</a></p>
+                    </p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Let's take a closer look at GitHub</a>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Explore other projects</a>
+                </div>
+              <!--  <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+
+                        <div class="col-md-6">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+            <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Tasks & Results</h1>
+                    <p class="mb-4">
+                    In order to achieve a semantic search engine, language processing processes are implemented on both documents to be searched in and user's query. Moreover, there are
+                    some semantic linguistic processing that should be carried out either on the documents offline and for once or on the query online.
+                    Since the query is smaller, the semantic analysis is applied on it.
+                    <br/><br/>
+                    The stages of developing and using this semantic serach engine can be summarized in three titles: 
+                    </p>
+                <h3 class="mb-4">Main Tasks</h3>                
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Documents processing</h3></p>
+                        <p class="mb-4">
+                            The first step is to read the data and parse it.
+                                    Then the parsed documents will be analyzed by using Standford CoreNlp functions, both the title and the content of each document are splitted to sentences, 
+                                    then each sentence is splitted into tokens and the stop words are removed.
+                                    Finally, for each token its lemma is found.								
+                                    The last step in this phase is to index and save the processed documents to be searched in in the further steps.
+                        </p>
+						
+
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Query processing</h3></p>
+                        <p class="mb-4">
+                                The first step is to read the query which was entered by the user.
+                                    Then, the same linguistic processes was applied on the documents, will be applied on the query. 
+                                    Moreover, by using CoreNlp functions, we select the Part of Speech for each token and search for synonms for.
+                                    Finally the query to be searched for will be recreated from the lemmas of the tokens in the original query
+                                    in addition to the lemmas of the synonms of the tokens in the original query.</p>
+                            
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Searching and showing the results</h3></p>
+                        <p class="mb-4">
+                                    After reading and processing the user's query, the searching is done among the indexed documents,
+                                        and then the original documents are returned as results to be shown.
+                                    
+                        </p>
+                       <!-- <h3 class="mb-4">Results examples</h3>                
+                        <p class="mb-4">
+                        In the following table, we can take alook at possible user's queries, and observe some of the returned news. <br/>
+                        We can notice that a search result contains in either its title or content, the word in the query or one of its synonms.</p>
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Query</th>
+                                        <th>Titles of Returned Documents</th>
+                                        <th>Descriptions of Returned Documents</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>women</b></td>
+                                        <td>Indian is world's shortest <b>woman</b></td>
+                                        <td>Jyoti Amge, ... world's shortest <b>woman</b> by Guinness World Records.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><b>Woman</b> set alight in New York fit</td>
+                                        <td>A man is arrested after a 73-year-old <b>woman</b> is ...</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td> other results. </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Parting</b></td>
+                                        <td>Mass burial for Philippines dead.</td>
+                                        <td>A mass burial ..., which <b>left</b> at least 650 dead on the southern island of Mindanao.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>VIDEO: Loneliness of the long distance runner.</td>
+                                        <td>Olympic hopeful Nader el Masri ... <b>leave</b>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td> other results. </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>   -->
+               
+                
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h4 class="display-5 mb-0">The project covers:</h4>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Programming languages</h4>
+                            <!--<h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>-->
+                            <span>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">Java</h6>
+                                        <h6 class="font-weight-bold">100%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Tools, Libraries, and Softwares</h4>
+                             <!--<h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>-->
+                            <span>Lucene, Satndford CoreNlp, and WordNet</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Concepts</h4>
+                            <!--<h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>-->
+                            <span>Natural Language Processing, Information Retrieval. </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+
+    
+
+    <!-- Copyright Start -->
+    <div id = "footer">
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+        $("#navbar").load("navbar.html #reusable_navbar");
+        $("#footer").load("footer.html #reusable_footer");
+       // $("#three").load("bottom.html #reusable_bottom");
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
