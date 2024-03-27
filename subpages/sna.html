@@ -83,15 +83,15 @@
                             <h1 class="display-1 mb-0">15</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>-->
-                        <h1 class="lh-base mb-0">Semantic Search Engine</h1>
+                        <h1 class="lh-base mb-0">Social Network Analysis</h1>
                         
                     </div>
                     <p> 
-                        The purpose of the project is to develop a semantic search engine in English language to search among news imported from BBC. 
-                        <br/><br/>
-                        To read a small introduction about serach engines, semantic search engines, and the structure of this project, please read an introducary report, <a href="../documents/SSE Introductory Report.pdf" target="_blank">here.</a></p>
-                    </p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="https://github.com/nemat-al/Semantic-Search-Engine" target="_blank" >Let's take a closer look at GitHub</a>
+                        The main goal was to develope a Social Network Analysis system, that served to
+                            guide any user with no experience in the SNA to detect communities, find the influencer and perform other tasks on a social
+                            network.<br/><br/>
+                        </p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="https://github.com/nemat-al/Network-Analysis" target="_blank" >Let's take a closer look at GitHub</a>
                     <a class="btn btn-primary py-3 px-5 mt-3" href="../index.html#project">Explore other projects</a>
                 </div>
               <!--  <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -113,39 +113,25 @@
         <div class="container">
             <div class="row g-5">
             <div class=" wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="mb-4">Tasks & Results</h2>
+                    <h2 class="mb-4">About the project</h2>
                     <p class="mb-4">
-                    In order to achieve a semantic search engine, language processing processes are implemented on both documents to be searched in and user's query. Moreover, there are
-                    some semantic linguistic processing that should be carried out either on the documents offline and for once or on the query online.
-                    Since the query is smaller, the semantic analysis is applied on it.
-                    <br/><br/>
-                    The stages of developing and using this semantic serach engine can be summarized in three titles: 
-                    </p>
-                <h3 class="mb-5">Main Tasks</h3>                
-                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Documents processing</h3></p>
-                        <p class="mb-4">
-                            The first step is to read the data and parse it.
-                                    Then the parsed documents will be analyzed by using Standford CoreNlp functions, both the title and the content of each document are splitted to sentences, 
-                                    then each sentence is splitted into tokens and the stop words are removed.
-                                    Finally, for each token its lemma is found.								
-                                    The last step in this phase is to index and save the processed documents to be searched in in the further steps.
-                        </p>
+                        Social Network Analysis aims to detect communities inside a network. Since researchers proposed many approaches,
+                        the decision of choosing one method as a task requires experience in the field of social networks.
+                         In this project, a defacto standard validation measure (Modularity) was applied to guide any user with no
+                          experience in Social Network Analysis in choosing one algorithm for detecting communities.
+                           In addition to that, some functionalities were added to the system such as finding the influencer, 
+                           calculating some centrality measures, and the ability to compare community detection algorithms.
+                       </p>
+                <h2 class="mb-4">Final Product</h2>       
+                <p class="mb-4">The final product of the project is a program where a user can perform the following tasks:</p>         
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Upload a file of a social network dataset to be analyzed.</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Figure out the recommended algorithms to be applied on the dataset to detect communities in that network.</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Detect different communities using recommended algorithm.</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Detect the influencer in the social network.</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Plot the social network.</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Compare the results of different algorithms for detecting the communities.</h3></p>
+                    <p>To check a scenario of using the product, please check the project in <a href="https://github.com/nemat-al/Network-Analysis#results-a-senario" target="_blank">GitHub</a>.</p>
 						
-
-                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Query processing</h3></p>
-                        <p class="mb-4">
-                                The first step is to read the query which was entered by the user.
-                                    Then, the same linguistic processes was applied on the documents, will be applied on the query. 
-                                    Moreover, by using CoreNlp functions, we select the Part of Speech for each token and search for synonms for.
-                                    Finally the query to be searched for will be recreated from the lemmas of the tokens in the original query
-                                    in addition to the lemmas of the synonms of the tokens in the original query.</p>
-                            
-                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Searching and showing the results</h3></p>
-                        <p class="mb-4">
-                                    After reading and processing the user's query, the searching is done among the indexed documents,
-                                        and then the original documents are returned as results to be shown.
-                                    
-                        </p>
                        <!-- <h3 class="mb-4">Results examples</h3>                
                         <p class="mb-4">
                         In the following table, we can take alook at possible user's queries, and observe some of the returned news. <br/>
@@ -223,7 +209,7 @@
                             <span>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">Java</h6>
+                                        <h6 class="font-weight-bold">R</h6>
                                         <h6 class="font-weight-bold">100%</h6>
                                     </div>
                                     <div class="progress">
@@ -240,9 +226,9 @@
                             <i class="fa fa-laptop-code fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h5 class="mb-3">Tools, Libraries, and Softwares</h5>
+                            <h5 class="mb-3">Tools, Libraries, and Softwares.</h5>
                              <!--<h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>-->
-                            <span>Lucene, Satndford CoreNlp, and WordNet</span>
+                            <span>R studio enviroment</span>
                         </div>
                     </div>
                 </div>
@@ -254,7 +240,7 @@
                         <div class="ms-sm-4">
                             <h5 class="mb-3">Concepts</h5>
                             <!--<h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>-->
-                            <span>Natural Language Processing, Information Retrieval. </span>
+                            <span>Network Analysis, Social Network Analysis. </span>
                         </div>
                     </div>
                 </div>

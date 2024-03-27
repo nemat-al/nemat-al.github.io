@@ -83,15 +83,14 @@
                             <h1 class="display-1 mb-0">15</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>-->
-                        <h1 class="lh-base mb-0">Semantic Search Engine</h1>
+                        <h1 class="lh-base mb-0">Multivariate Data Analysis</h1>
                         
                     </div>
                     <p> 
-                        The purpose of the project is to develop a semantic search engine in English language to search among news imported from BBC. 
-                        <br/><br/>
-                        To read a small introduction about serach engines, semantic search engines, and the structure of this project, please read an introducary report, <a href="../documents/SSE Introductory Report.pdf" target="_blank">here.</a></p>
-                    </p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="https://github.com/nemat-al/Semantic-Search-Engine" target="_blank" >Let's take a closer look at GitHub</a>
+                        The project aimed to analyze a real-world dataset by analyzing univariate and multivariate random variables, sampling and forecasting multivariate random variables. </p>
+						 <br/><br/>
+                        </p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="https://github.com/nemat-al/Network-Analysis" target="_blank" >Let's take a closer look at GitHub</a>
                     <a class="btn btn-primary py-3 px-5 mt-3" href="../index.html#project">Explore other projects</a>
                 </div>
               <!--  <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -113,23 +112,30 @@
         <div class="container">
             <div class="row g-5">
             <div class=" wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="mb-4">Tasks & Results</h2>
+                    <h2 class="mb-4">Tasks</h2>
                     <p class="mb-4">
-                    In order to achieve a semantic search engine, language processing processes are implemented on both documents to be searched in and user's query. Moreover, there are
-                    some semantic linguistic processing that should be carried out either on the documents offline and for once or on the query online.
-                    Since the query is smaller, the semantic analysis is applied on it.
                     <br/><br/>
                     The stages of developing and using this semantic serach engine can be summarized in three titles: 
                     </p>
                 <h3 class="mb-5">Main Tasks</h3>                
-                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Documents processing</h3></p>
+                    <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Analysis of univariate random variables</h3></p>
                         <p class="mb-4">
-                            The first step is to read the data and parse it.
-                                    Then the parsed documents will be analyzed by using Standford CoreNlp functions, both the title and the content of each document are splitted to sentences, 
-                                    then each sentence is splitted into tokens and the stop words are removed.
-                                    Finally, for each token its lemma is found.								
-                                    The last step in this phase is to index and save the processed documents to be searched in in the further steps.
-                        </p>
+                           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid rounded" src="/img/projects/mda/task1.png" alt="">
+                                    
+                                </div>
+                            </div>
+								<p> In the <a href="#UDA">figure</a> above, we can see an estimation of distribution to a random variable found by three methods, LSE, MLE, and MM. <br/>
+									The main goal of this task is to estimate the distribution function of a univariate random variable. <br/>
+									In order to acheive that, I've applied several steps:<br/>
+									First, plotting a non-parametric estimation of PDF because it helps determine the likelihood of the random variable falling within a specific range of values. <br/>
+									Then, by plotting “box with whiskers” we can gain a more statistics estimation and find the outliers in the data.<br/>
+									After that, we can expect a theoretical distributions that best reflect the empirical data.<br/>
+									So, then we can estimate the random variable distribution parameters using maximum likelihood technique and Least Sequares methods.<br/>
+									Finally, a validation of empirical and theoretical distributions is performed using quantile biplots, in addition to some statistical tests. <br/>
+									To learn more details and check the code, please follow the link <a href="https://github.com/Nemat-Allah-Aloush/Multivariate_Data_Analysis/tree/master/1.Analysis%20of%20univariate%20random%20variables" target="_blank">here.</a>
+								</p></p>
 						
 
                     <p class="mb-4"><i class="far fa-check-circle text-primary me-3"></i>Query processing</h3></p>
